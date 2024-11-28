@@ -10,8 +10,10 @@ import { LoginDto } from './entity/loginDto';
 import { Role } from './entity/user.entity';
 import { UserDto } from './entity/userDto';
 import { UsuarioService } from './usuarios.service';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('usuarios')
+@ApiTags('Usuarios')
 export class UsuariosController {
     //instanciamos el servicio para traer sus funcinoes
     constructor(private readonly service: UsuarioService,

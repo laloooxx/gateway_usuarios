@@ -1,5 +1,6 @@
 import { Body, Controller, Get, Inject, Param, Post, Query, Req, RequestTimeoutException, UnauthorizedException, UseGuards } from "@nestjs/common";
 import { ClientProxy } from "@nestjs/microservices";
+import { ApiTags } from "@nestjs/swagger";
 import { timeout } from "rxjs";
 import { RESERVAS_SERVICE } from "src/config";
 import { CombineGuard } from "src/usuarios/auth/guards/combine.guard";
@@ -7,6 +8,7 @@ import { Roles } from "src/usuarios/auth/guards/role.decorator";
 import { Role } from "src/usuarios/entity/user.entity";
 
 @Controller('reservas')
+@ApiTags('Reservas Departamentos')
 export class ReservasController {
     constructor(
         @Inject(RESERVAS_SERVICE)

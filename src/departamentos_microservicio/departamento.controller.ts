@@ -1,11 +1,13 @@
 import { Body, Controller, Delete, Get, Inject, Param, Patch, Post, Req, UseGuards, ValidationPipe } from "@nestjs/common";
 import { ClientProxy } from "@nestjs/microservices";
+import { ApiTags } from "@nestjs/swagger";
 import { RESERVAS_SERVICE } from "src/config";
 import { CombineGuard } from "src/usuarios/auth/guards/combine.guard";
 import { Roles } from "src/usuarios/auth/guards/role.decorator";
 import { Role } from "src/usuarios/entity/user.entity";
 
 @Controller('departamento')
+@ApiTags('Departamentos')
 export class DepartamentoController {
     constructor(
         @Inject(RESERVAS_SERVICE)
