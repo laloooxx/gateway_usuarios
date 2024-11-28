@@ -29,9 +29,9 @@ Este microservicio actúa como el Gateway para la arquitectura de microservicios
 
 ### **Pasos**
 1. Clona el repositorio:
-   En el bash
-   git clone https://github.com/laloooxx/gateway_usuarios
-   cd gateway-usuarios
-   npm install
-   Configurar las variables de entorno
-   Iniciamos la aplicacion con: npm run start:dev
+   - En el bash
+   - git clone https://github.com/laloooxx/gateway_usuarios
+   - cd gateway-usuarios
+   - npm install
+   - Configurar las variables de entorno
+   - Iniciamos la aplicacion con: npm run start:dev
